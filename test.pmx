@@ -1,0 +1,17 @@
+---
+name: test
+description: testjdk1.8
+keywords: testjdkmysql
+type: Default
+documentation: test
+images:
+- name: tutum_mysql_latest
+  source: tutum/mysql:latest
+  type: Default
+- name: java
+  source: java:latest
+  type: Default
+  ports:
+  - host_port: '8090'
+    container_port: '8080'
+    proto: TCP
